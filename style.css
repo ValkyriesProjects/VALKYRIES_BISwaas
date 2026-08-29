@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    border-bottom: 1px solid #e5e0e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width:600px;
+    height:75;
+    width:100%
+}
+
+.logo h4 {
+    font-size: 19px;
+    color: #123c7a;
+}
+
+.logo span {
+    font-size: 15px;
+    color: #123c7a;;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #0a22af;
+}
+
+.login-btn {
+    background: #123c7a;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom, #eef5ff,#ffffff,white,#f5f8fca6,white,#eef5ff);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 600px;
+    padding: 80px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    /*background: linear-gradient(
+        135deg,
+        #eef5ff,
+        #ffffff
+    );*/
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    display: inline-block;
+    color: #123c7a;
+    background: #e3edff;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+    color: #172554;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    background: white;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.301);
+    max-width: 600px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.search-box button {
+    border: none;
+    background: #123c7a;
+    color: white;
+    padding: 0 28px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.quick-links {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.quick-links a {
+    margin-left: 12px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+/* ================= HERO AI CHAT ================= */
+
+.hero-card {
+    width: 360px;
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.171);
+}
+
+.bot-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #e3edff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.hero-card h3 {
+    color: #172554;
+    margin-bottom: 5px;
+}
+
+.hero-card > p {
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.chat-preview {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.message {
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.message.bot {
+    background: #e8f0ff;
+}
+
+.message.user {
+    background: #123c7a;
+    color: white;
+    margin-left: 30px;
+}
+
+.chat-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ================= SERVICES SECTION ================= */
+
+.section {
+    padding: 90px 7%;
+    /*background: white;*/
+}
+
+.section-title {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.section-title span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #172554;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+
+/* ================= SERVICES ================= */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 28px;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    background: #edf4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ================= STANDARDS ================= */
+
+.standards {
+    padding: 90px 7%;
+    /*background: #f5f8fc;*/
+}
+
+.standard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.standard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.standard-code {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #e8f0ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.standard-card h3 {
+    margin: 15px 0 8px;
+}
+
+.standard-card p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.standard-card button {
+    padding: 9px 16px;
+    background: white;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* ================= AI ASSISTANT ================= */
+
+.assistant-section {
+    padding: 90px 7%;
+    /*background: white;*/
+}
+
+.assistant-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.assistant-info h2 {
+    font-size: 38px;
+    color: #172554;
+    margin: 10px 0 20px;
+}
+
+.assistant-info h2 span {
+    color: #2563eb;
+}
+
+.assistant-info p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.assistant-info ul {
+    list-style: none;
+}
+
+.assistant-info li {
+    margin: 12px 0;
+    color: #374151;
+}
+
+
+/* CHAT WINDOW */
+
+.chat-window {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.171);
+    border: 1px solid #e5e7eb;
+}
+
+.chat-header {
+    background: #123c7a;
+    color: white;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bot-avatar {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-header h3 {
+    font-size: 15px;
+}
+
+.chat-header span {
+    font-size: 11px;
+    color: #b8d2ff;
+}
+
+.chat-body {
+    padding: 20px;
+    height: 330px;
+    background: #f8fafc;
+}
+
+.chat-message {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    max-width: 85%;
+    font-size: 13px;
+}
+
+.bot-message {
+    background: #e5edff;
+}
+
+.user-message {
+    background: #123c7a;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.chat-input button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 80px 7%;
+    /*background: #eef5ff;*/
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0f1f3d;
+    color: white;
+    padding: 60px 7% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #b7c2d8;
+    max-width: 400px;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    display: block;
+    color: #b7c2d8;
+    text-decoration: none;
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.footer-content a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #2b3b58;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #9aa9c2;
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .search-box {
+        margin: auto;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .standard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assistant-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-box button {
+        padding: 12px;
+    }
+
+    .section,
+    .standards,
+    .assistant-section {
+        padding: 60px 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assistant-info h2 {
+        font-size: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
