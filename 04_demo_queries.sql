@@ -5,7 +5,7 @@
 USE `soumi-database`;
 
 -- Sanity check: row counts
-SELECT 'standards' AS table_name, COUNT(*) AS rows FROM standards
+SELECT 'standards' AS table_name, COUNT(*) AS row_count FROM standards
 UNION ALL SELECT 'purity_grades', COUNT(*) FROM purity_grades
 UNION ALL SELECT 'hallmark_components', COUNT(*) FROM hallmark_components
 UNION ALL SELECT 'hallmarking_rules', COUNT(*) FROM hallmarking_rules
