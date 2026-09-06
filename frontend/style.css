@@ -1584,3 +1584,25 @@ input {
   font-size: 13px;
   font-weight: 600;
 }
+
+.hero-visual {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.preview-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo {
+  width: 550px;
+  height: 550px;
+  object-fit: contain;
+  top: 30px;
+  right: 20px;
+}
