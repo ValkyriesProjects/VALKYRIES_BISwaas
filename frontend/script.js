@@ -500,7 +500,7 @@ function getMockBotResponse(message) {
   FUTURE CHAT API FUNCTION
   ------------------------*/
 async function getBotResponseFromAPI(userMessage) {
-  const response = await fetch("http://127.0.0.1:5000/api/chat", {
+  const response = await fetch("/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
